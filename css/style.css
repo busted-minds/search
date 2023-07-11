@@ -62,8 +62,8 @@ header a{
 }
 
 header #sign-in{
-    width: 110px;
-    height: 60px;
+    width: 90px;
+    height: 50px;
     /* background-image: linear-gradient(#f1341c, #6dd5ed); */
     background-color: #D9AFD9;
     background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
