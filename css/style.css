@@ -209,9 +209,9 @@ main #offer-wrapper a{
     position: fixed;
     left: 0;
     right: 0;
-    background-image: #D0D0D0;
+    
     bottom: 0;
-    color: #f0e4e4;
+    color: #f2f2f2;
 }
 
 footer #country{
@@ -246,7 +246,7 @@ footer #links > div:first-child{
 
 footer #links > div a{
     padding:15px;
-    color: #303030;
+    color: #333333;
 }
 
 /* == Key Frames */
