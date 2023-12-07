@@ -209,7 +209,7 @@ main #offer-wrapper a{
     position: fixed;
     left: 0;
     right: 0;
-    background-image: #F0F8FF;
+    background-image: #D0D0D0;
     bottom: 0;
     color: #f0e4e4;
 }
@@ -221,7 +221,7 @@ footer #country{
 }
 
 footer #country a {
-    color: #fff;
+    color: #303030;
 }
 
 footer #country a:hover {
