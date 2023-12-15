@@ -3,7 +3,10 @@
 <head>
 <!-- Add this line to include Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
+<link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <!-- Your existing code remains unchanged here -->
 
     <style>
@@ -47,15 +50,68 @@
 	
 </head>
 <body width = "device-width">
+<nav>
+      <div class="logo">
+        <i class="bx bx-menu menu-icon"></i>
+      </div>
+      <div class="sidebar">
+	          <div class="logo">
+          <i class="bx bx-menu menu-icon"></i>
+		              <img src="https://www.bustedminds.cf/images/Busted-Minds-Logo.png" style="max-width: 70%; height: 60px; ">
+		          </div>
+        <div class="sidebar-content">
+          <ul class="lists">
+            <li class="list">
+              <a href="https://busted-minds.github.io/about.html" class="nav-link">
+                <i class="bx bx-heart icon"></i>
+                <span class="link">About Us</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="https://busted-minds.github.io/contact.html" class="nav-link">
+                <i class="bx bx-support icon"></i>
+                <span class="link">Support</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="https://busted-minds.github.io/contact.html" class="nav-link">
+                <i class="bx bxs-business icon"></i>
+                <span class="link">Business</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="https://busted-minds.github.io/contact.html" class="nav-link">
+                <i class="bx bx-chat icon"></i>
+                <span class="link">Feedback</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="https://busted-minds.github.io/privacy-policy.html" class="nav-link">
+                <i class="bx bx-lock-open-alt icon"></i>
+                <span class="link">Privacy</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="https://busted-minds.github.io/terms-and-conditions.html" class="nav-link">
+                <i class="bx bx-book-alt icon"></i>
+                <span class="link">Terms</span>
+              </a>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    <section class="overlay"></section>
 
-<header>
 
-</header>
   <!-- Start Main Element -->
     <main>
+	<br><br><br>
         <div id="logo-wrapper">
             <img src="image/busted-minds-search.jpg" style="max-width: 86%; height: 100px; display: block; margin: auto;" alt="Busted Minds Search">
         </div>
+		<br><br>
         <div id="form-wrapper">
             <form action="search.html" method="GET" enctype="application/x-www-form-urlencoded">
                 <div id="search-wrapper">
@@ -150,18 +206,21 @@
            style="padding-bottom:22px;position:relative;"
         >
         </div></div>
-    <!-- start footer element -->
-    <footer>
-            <div id="links">      
-            <div>
-						 <a target="_blank" href="https://busted-minds.github.io/privacy-policy.html">Privacy</a>
-                         <a target="_blank" href="https://busted-minds.github.io/terms-and-conditions.html">Terms</a>
-                         <a target="_blank" href="https://busted-minds.github.io/contact.html">Business</a>
-		    <a target="_blank" href="https://busted-minds.github.io/about.html">About</a>
-                </div>
-        </div>
-    </footer>
-    <!-- end footer element -->
     
+  <script>
+      const navBar = document.querySelector("nav"),
+        menuBtns = document.querySelectorAll(".menu-icon"),
+        overlay = document.querySelector(".overlay");
+
+      menuBtns.forEach((menuBtn) => {
+        menuBtn.addEventListener("click", () => {
+          navBar.classList.toggle("open");
+        });
+      });
+
+      overlay.addEventListener("click", () => {
+        navBar.classList.remove("open");
+      });
+    </script>   
 </body>
 </html>
