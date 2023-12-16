@@ -6,6 +6,33 @@
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
     />
+	<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    z-index: 2;
+  }
+
+  .content {
+    margin-top: 60px; /* Adjust this value based on your navigation bar height */
+    padding: 16px;
+  }
+
+  .gcse-searchbox,
+  .gcse-searchresults {
+    margin-top: 60px; /* Adjust this value based on your navigation bar height */
+  }
+</style>
         <link rel="stylesheet" href="node_modules/reset.css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 	
@@ -71,7 +98,7 @@
     </nav>
     <section class="overlay"></section>    
     
-    <div>
+<div class="content">
     <script async src="https://cse.google.com/cse.js?cx=1290f1861e322472e">
 </script>
 <div class="gcse-searchbox"></div>
