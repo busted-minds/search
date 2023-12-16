@@ -1,143 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Add this line to include Font Awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-<link
-      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-	<style>
-        /* Add some styling for the icons and text */
-        #icon-wrapper {
-            display: flex;
-            justify-content: center; /* Center the icons horizontally */
-            margin-top: 10px;
-        }
-
-        #icon-wrapper div {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0 18px; /* Add some spacing between icons */
-            margin-bottom: 15px; /* Adjust the margin as needed */
-        }
-
-        #icon-wrapper i {
-            font-size: 24px;
-            margin-bottom: 5px; /* Adjust the margin as needed */
-        }
-		#icon-wrapper img {
-            width: 40px; /* Adjust the width of the image as needed */
-            height: 40px; /* Adjust the height of the image as needed */
-            margin-bottom: 5px; /* Adjust the margin as needed */
-		}
-		nav {
-            position: fixed;
-            width: 100%;
-            background-color: #fff; /* Adjust the background color as needed */
-            z-index: 1000; /* Ensure it is above other elements */
-        }
-
-        /* Add a class for the search results container */
-        .search-results-container {
-            margin-top: 60px; /* Adjust the margin to leave space for the navigation bar */
-            z-index: 2000; /* Set a higher z-index for the search results */
-        }
-		 .gsc-control-cse {
-            background-color: #fff;
-        }
-    </style>
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> <link rel="manifest" href="/site.webmanifest"> <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"> <meta name="msapplication-TileColor" content="#da532c"> <meta name="theme-color" content="#ffffff">
-    <meta name='description' content='Busted Minds Search helps you turn information into action, making it faster and easier to go from searching to doing. '>.
-    <link rel="stylesheet" href="node_modules/reset.css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-	
-	
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Results</title>
     <link rel="icon" href="image/favicon.ico" type="image/x-icon">
-	
-<script async src="https://cse.google.com/cse.js?cx=ac27f80ff57c337da"></script>
 </head>
 <body>
-
-<nav>
-      <div class="logo">
-        <i class="bx bx-menu menu-icon"></i>
-	<center>	<img src="image/busted-minds-search.jpg" style="max-width: 80%; height: 60px; "></center>
-      </div>
-      <div class="sidebar">
-	          <div class="logo">
-          <i class="bx bx-menu menu-icon"></i>
-		             <img src="https://www.bustedminds.cf/images/Busted-Minds-Logo.png" style="max-width: 70%; height: 60px; ">
-		          </div>
-        <div class="sidebar-content">
-          <ul class="lists">
-            <li class="list">
-              <a href="https://busted-minds.github.io/about.html" class="nav-link">
-                <i class="bx bx-heart icon"></i>
-                <span class="link">About Us</span>
-              </a>
-            </li>
-            <li class="list">
-              <a href="https://busted-minds.github.io/contact.html" class="nav-link">
-                <i class="bx bx-support icon"></i>
-                <span class="link">Support</span>
-              </a>
-            </li>
-            <li class="list">
-              <a href="https://busted-minds.github.io/contact.html" class="nav-link">
-                <i class="bx bxs-business icon"></i>
-                <span class="link">Business</span>
-              </a>
-            </li>
-            <li class="list">
-              <a href="https://busted-minds.github.io/contact.html" class="nav-link">
-                <i class="bx bx-chat icon"></i>
-                <span class="link">Feedback</span>
-              </a>
-            </li>
-            <li class="list">
-              <a href="https://busted-minds.github.io/privacy-policy.html" class="nav-link">
-                <i class="bx bx-lock-open-alt icon"></i>
-                <span class="link">Privacy</span>
-              </a>
-            </li>
-            <li class="list">
-              <a href="https://busted-minds.github.io/terms-and-conditions.html" class="nav-link">
-                <i class="bx bx-book-alt icon"></i>
-                <span class="link">Terms</span>
-              </a>
-            </li>
-          </ul>
-          
-        </div>
-      </div>
-    </nav>
-<br><br><br><br>
-
-<div class="gcse-search search-results-container"></div>
-					    <section class="overlay"></section>
-
-<script>
-    const navBar = document.querySelector("nav"),
-        menuBtns = document.querySelectorAll(".menu-icon"),
-        overlay = document.querySelector(".overlay");
-
-    menuBtns.forEach((menuBtn) => {
-        menuBtn.addEventListener("click", () => {
-            navBar.classList.toggle("open");
-        });
-    });
-
-    overlay.addEventListener("click", () => {
-        navBar.classList.remove("open");
-    });
+  <center><a href="index.html"><img style="width: 310px; height: 100px;" src="image/busted-minds-search.jpg" alt="Busted Minds Search"></a></center>
+    <script async src="https://cse.google.com/cse.js?cx=1290f1861e322472e">
 </script>
-
+<div class="gcse-searchresults-only"></div>
 </body>
 </html>
