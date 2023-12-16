@@ -35,8 +35,53 @@
             height: 40px; /* Adjust the height of the image as needed */
             margin-bottom: 5px; /* Adjust the margin as needed */
 		}
-    </style>
+		
+/* Add styles for the logo and links at the bottom */
+        #bottom-content {
+            text-align: center;
+            margin: 20px 0;
+        }
 
+        .bottom-link {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333; /* Adjust the color as needed */
+        }
+
+        #bottom-logo {
+            max-width: 60%; /* Adjust the max-width as needed */
+            height: 50px;
+            display: block;
+            margin: 20px auto;
+        }
+
+        /* Add styles for the privacy badge container */
+        #privacy-badge-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        /* Add styles for the privacy badge SVG */
+        #privacy-badge {
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px; /* Adjust the margin as needed */
+			
+        }
+
+        /* Add styles for the text next to the SVG */
+        #protect-text {
+            font-size: 16px;
+            color: #333; /* Adjust the color as needed */
+        }
+		
+		#privacy-link {
+            color: #007BFF; /* Adjust the link color as needed */
+            cursor: pointer;
+        }
+    </style>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> <link rel="manifest" href="/site.webmanifest"> <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"> <meta name="msapplication-TileColor" content="#da532c"> <meta name="theme-color" content="#ffffff">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -57,7 +102,7 @@
       <div class="sidebar">
 	          <div class="logo">
           <i class="bx bx-menu menu-icon"></i>
-		              <img src="https://www.bustedminds.cf/images/Busted-Minds-Logo.png" style="max-width: 56%; height: 46px; ">
+		<center><img src="https://www.bustedminds.cf/images/Busted-Minds-Logo.png" style="width: 80%; height: 40px; "></center>
 		          </div>
         <div class="sidebar-content">
           <ul class="lists">
@@ -97,8 +142,42 @@
                 <span class="link">Terms</span>
               </a>
             </li>
+			<li class="list">
+              <a href="https://discord.gg/zGjyXFQbMh" class="nav-link">
+                <i class="bx bx-world icon"></i>
+                <span class="link">Join</span>
+              </a>
+            </li>
           </ul>
-          
+		  <br>
+          <div class="bottom-cotent">
+            <div><script>
+        (function(d, s, id) {
+            if (d.getElementById(id)) {
+                if (window.__TOMORROW__) {
+                    window.__TOMORROW__.renderWidget();
+                }
+                return;
+            }
+            const fjs = d.getElementsByTagName(s)[0];
+            const js = d.createElement(s);
+            js.id = id;
+            js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
+
+            fjs.parentNode.insertBefore(js, fjs);
+        })(document, 'script', 'tomorrow-sdk');
+        </script>
+
+        <div class="tomorrow"
+           data-location-id=""
+           data-language="EN"
+           data-unit-system="METRIC"
+           data-skin="light"
+           data-widget-type="upcoming"
+           style="padding-bottom:22px;position:relative;"
+        >
+        </div></div>
+          </div>
         </div>
       </div>
     </nav>
@@ -180,33 +259,22 @@
 <br><br><br><br><br><br><br><br><br><br><br><br><br>	
     </main>    	
 	<img class="test" src="image/img1.jpeg" alt="Busted Minds Search | Quality Search Results | Trusted World Wide">
-		<div><script>
-        (function(d, s, id) {
-            if (d.getElementById(id)) {
-                if (window.__TOMORROW__) {
-                    window.__TOMORROW__.renderWidget();
-                }
-                return;
-            }
-            const fjs = d.getElementsByTagName(s)[0];
-            const js = d.createElement(s);
-            js.id = id;
-            js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
-
-            fjs.parentNode.insertBefore(js, fjs);
-        })(document, 'script', 'tomorrow-sdk');
-        </script>
-
-        <div class="tomorrow"
-           data-location-id=""
-           data-language="EN"
-           data-unit-system="METRIC"
-           data-skin="light"
-           data-widget-type="upcoming"
-           style="padding-bottom:22px;position:relative;"
-        >
-        </div></div>
-    
+		
+		<div id="bottom-content">
+<a href="https://www.bustedminds.cf/" target="_blank">
+        <img id="bottom-logo" src="https://www.bustedminds.cf/images/Busted-Minds-Logo.png" alt="Busted Minds Logo"> <br><br>
+    </a>
+    <a class="bottom-link" href="https://busted-minds.github.io/terms-and-conditions.html">Terms</a> <br><br>
+    <a class="bottom-link" href="https://busted-minds.github.io/about.html">About</a> <br><br>
+    <a class="bottom-link" href="https://busted-minds.github.io/contact.html">Business</a> <br>
+    <!-- Include the privacy badge SVG -->
+	<div id="privacy-badge-container">
+        <img id="privacy-badge" src="https://www.startpage.com/sp/cdn/images/home/default/privacy-please-badge-new.svg" alt="Privacy Badge">
+         <span id="protect-text">Learn more about how <br>we protect your privacy.<br>Visit our <a id="privacy-link" href="https://busted-minds.github.io/privacy-policy.html">privacy policy</a></span>
+    </div>
+	</div>		
+		</div>
+		  
   <script>
       const navBar = document.querySelector("nav"),
         menuBtns = document.querySelectorAll(".menu-icon"),
