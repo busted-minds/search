@@ -7,60 +7,33 @@
       rel="stylesheet"
     />
 	<style>
-	body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
 
-nav {
-  text-align: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #333;
-  padding: 10px;
-  color: white;
-  z-index: 2;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    z-index: 2;
+  }
 
-.logo {
-  display: flex;
-  align-items: center;
-}
+  .content {
+    margin-top: 60px; /* Adjust this value based on your navigation bar height */
+    padding: 16px;
+  }
 
-#nav img {
-  display: block;
-  margin: auto;
-}
-
-.sidebar {
-  display: flex;
-  align-items: center;
-}
-
-.sidebar img {
-  width: 85%;
-  height: 48px;
-}
-
-.content {
-  margin-top: 60px;
-  /* Adjust this value based on your navigation bar height */
-  padding: 16px;
-}
-
-.gcse-searchbox,
-.gcse-searchresults {
-  margin-top: 60px;
-  /* Adjust this value based on your navigation bar height */
-}
-</style>        
-    
-    <link rel="stylesheet" href="node_modules/reset.css/reset.css">
+  .gcse-searchbox,
+  .gcse-searchresults {
+    margin-top: 60px; /* Adjust this value based on your navigation bar height */
+  }
+</style>
+        <link rel="stylesheet" href="node_modules/reset.css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 	
 
@@ -73,13 +46,13 @@ nav {
 <body width = "device-width">
 <nav>
       <div class="logo">
-        <i class="bx bx-menu menu-icon"></i><br><br><br>
-		<img src="image/busted-minds-search.jpg" style="width: auto; height: 60px;  ">
+        <i class="bx bx-menu menu-icon"></i>
+<img class="slogo-name" src="https://search.bustedminds.cf/image/busted-minds-search.jpg" >
       </div>
       <div class="sidebar">
 	          <div class="logo">
           <i class="bx bx-menu menu-icon"></i>
-		<center><img src="https://www.bustedminds.cf/images/Busted-Minds-Logo.png" style="width: 85%; height: 48px; "></center>
+		<center><img src="https://www.bustedminds.cf/images/Busted-Minds-Logo.png" style="width: 80%; height: 48px; "></center>
 		          </div>
         <div class="sidebar-content">
           <ul class="lists">
