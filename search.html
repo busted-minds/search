@@ -1,16 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+        <link rel="stylesheet" href="node_modules/reset.css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+	
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Results</title>
     <link rel="icon" href="image/favicon.ico" type="image/x-icon">
 </head>
-<body>
+<body width = "device-width">
+<nav>
+      <div class="logo">
+        <i class="bx bx-menu menu-icon"></i>
+      </div>
+      <div class="sidebar">
+	          <div class="logo">
+          <i class="bx bx-menu menu-icon"></i>
+		              <img src="https://www.bustedminds.cf/images/Busted-Minds-Logo.png" style="max-width: 70%; height: 60px; ">
+		          </div>
+        <div class="sidebar-content">
+          <ul class="lists">
+            <li class="list">
+              <a href="https://busted-minds.github.io/about.html" class="nav-link">
+                <i class="bx bx-heart icon"></i>
+                <span class="link">About Us</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="https://busted-minds.github.io/contact.html" class="nav-link">
+                <i class="bx bx-support icon"></i>
+                <span class="link">Support</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="https://busted-minds.github.io/contact.html" class="nav-link">
+                <i class="bx bxs-business icon"></i>
+                <span class="link">Business</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="https://busted-minds.github.io/contact.html" class="nav-link">
+                <i class="bx bx-chat icon"></i>
+                <span class="link">Feedback</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="https://busted-minds.github.io/privacy-policy.html" class="nav-link">
+                <i class="bx bx-lock-open-alt icon"></i>
+                <span class="link">Privacy</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="https://busted-minds.github.io/terms-and-conditions.html" class="nav-link">
+                <i class="bx bx-book-alt icon"></i>
+                <span class="link">Terms</span>
+              </a>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    <section class="overlay"></section>    
+    
+    
     <script async src="https://cse.google.com/cse.js?cx=1290f1861e322472e">
 </script>
 <div class="gcse-searchbox"></div>
   <div class="gcse-searchresults"></div>
+
+    <script>
+      const navBar = document.querySelector("nav"),
+        menuBtns = document.querySelectorAll(".menu-icon"),
+        overlay = document.querySelector(".overlay");
+
+      menuBtns.forEach((menuBtn) => {
+        menuBtn.addEventListener("click", () => {
+          navBar.classList.toggle("open");
+        });
+      });
+
+      overlay.addEventListener("click", () => {
+        navBar.classList.remove("open");
+      });
+    </script>  
 </body>
 </html>
