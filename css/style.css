@@ -294,10 +294,9 @@ nav .logo {
   font-weight: 500;
 }
 
-.logo .slogo-name {  
-  margin: 0 250%;
-  max-width: 100%;
+.logo .slogo-name {
   height: 60px;
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 768px) {

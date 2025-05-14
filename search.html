@@ -23,6 +23,45 @@
     z-index: 2;
   }
 
+  /* Container for the nav bar content */
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 16px;
+}
+
+/* Left menu icon */
+.menu-left,
+.menu-right {
+  width: 60px; /* Make both left and right the same width to keep logo truly centered */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Centered logo */
+.logo-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Logo image */
+.slogo-name {
+  height: 60px;
+  max-width: 100%;
+}
+
+/* Menu icon style */
+.menu-icon {
+  font-size: 26px;
+  cursor: pointer;
+  color: #333;
+}
   .content {
     margin-top: 60px; /* Adjust this value based on your navigation bar height */
     padding: 16px;
@@ -32,6 +71,24 @@
   .gcse-searchresults {
     margin-top: 60px; /* Adjust this value based on your navigation bar height */
   }
+
+  .custom-cse-wrapper {
+  max-width: 600px;
+  margin: 20px auto;
+  border: 2px solid #3a5997;
+  padding: 10px;
+  border-radius: 8px;
+  background: #f9f9f9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Try adjusting iframe size (not guaranteed) */
+.custom-cse-wrapper iframe {
+  width: 100% !important;
+  height: 50px !important;
+}
+
+
 /* Add styles for the logo and links at the bottom */
         #bottom-content {
             text-align: center;
@@ -103,12 +160,18 @@
 </head>
 <body width = "device-width">
 <nav>
-      <div class="logo">
-        <i class="bx bx-menu menu-icon"></i>
-<a href="https://busted-minds.github.io/search/">
-  <img class="slogo-name" src="https://busted-minds.github.io/search/image/busted-minds-search.png" >
-</a>
-      </div>
+  <div class="nav-inner">
+    <div class="menu-left">
+      <i class="bx bx-menu menu-icon"></i>
+    </div>
+    <div class="logo-center">
+      <a href="https://busted-minds.github.io/search/">
+        <img class="slogo-name" src="image/busted-minds-search.jpg" alt="Busted Minds Search">
+      </a>
+    </div>
+    <div class="menu-right"><!-- blank to balance flex --></div>
+  </div>
+  </div>
       <div class="sidebar">
 	          <div class="logo">
           <i class="bx bx-menu menu-icon"></i>
@@ -200,7 +263,9 @@
 <div class="content">
     <script async src="https://cse.google.com/cse.js?cx=1290f1861e322472e">
 </script>
-<div class="gcse-searchbox"></div>
+<div class="custom-cse-wrapper">
+  <div class="gcse-searchbox"></div>
+</div>
   <div class="gcse-searchresults"></div></div>
 	<div id="bottom-content">
 <a href="https://busted-minds.github.io/" target="_blank">
