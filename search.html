@@ -24,6 +24,20 @@ color: white;
 z-index: 2;
 }
 
+/* Make sure the logo’s container spans the full width */
+nav .logo {
+  width: 100%;
+  text-align: center;  /* center inline children */
+}
+
+/* And force the image into a block with auto margins */
+nav .logo img {
+  display: block;
+  margin: 0 auto;
+  max-height: 48px;    /* keep your sizing */
+}
+
+
 .content {
 margin-top: 60px; /\* Adjust this value based on your navigation bar height \*/
 padding: 16px;
