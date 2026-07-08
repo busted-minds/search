@@ -1,67 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results | Busted Minds Search</title>
+    <meta name="description" content="View Busted Minds Search results powered by Google Custom Search.">
+    <meta name="robots" content="noindex, follow">
+    <meta name="author" content="Busted Minds">
+    <link rel="canonical" href="https://search.bustedminds.us.kg/search.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Busted Minds Search">
+    <meta property="og:title" content="Search Results | Busted Minds Search">
+    <meta property="og:description" content="View Busted Minds Search results powered by Google Custom Search.">
+    <meta property="og:url" content="https://search.bustedminds.us.kg/search.html">
+    <meta property="og:image" content="https://search.bustedminds.us.kg/image/busted-minds-search.jpg">
+    <meta property="og:image:alt" content="Busted Minds Search logo">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Search Results | Busted Minds Search">
+    <meta name="twitter:description" content="View Busted Minds Search results powered by Google Custom Search.">
+    <meta name="twitter:image" content="https://search.bustedminds.us.kg/image/busted-minds-search.jpg">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+    <link rel="preconnect" href="https://cse.google.com" crossorigin>
+    <link rel="preconnect" href="https://busted-minds.github.io">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 <link
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
-    />
+    >
 	<style>
   body {
     margin: 0;
     font-family: Arial, sans-serif;
   }
 
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    padding: 10px;
-    color: white;
-    z-index: 2;
-  }
-
-  /* Container for the nav bar content */
-.nav-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 100%;
-  padding: 0 16px;
-}
-
-/* Left menu icon */
-.menu-left,
-.menu-right {
-  width: 60px; /* Make both left and right the same width to keep logo truly centered */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Centered logo */
-.logo-center {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Logo image */
-.slogo-name {
-  height: 60px;
-  max-width: 100%;
-}
-
-/* Menu icon style */
-.menu-icon {
-  font-size: 26px;
-  cursor: pointer;
-  color: #333;
-}
   .content {
     margin-top: 60px; /* Adjust this value based on your navigation bar height */
     padding: 16px;
@@ -101,11 +74,53 @@
             color: #333; /* Adjust the color as needed */
         }
 
+        .powered-by-lockup {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            box-sizing: border-box;
+            max-width: min(280px, calc(100% - 32px));
+            padding: 14px 24px 16px;
+            margin: 0 auto 22px;
+            border: 1px solid #dbeaf0;
+            border-radius: 8px;
+            background: #fff;
+            box-shadow: 0 10px 26px rgba(26, 67, 86, 0.12);
+            text-decoration: none;
+            transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+        }
+
+        .powered-by-lockup:hover {
+            border-color: #86d2e4;
+            box-shadow: 0 14px 32px rgba(26, 67, 86, 0.16);
+            transform: translateY(-2px);
+        }
+
+        .powered-by {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #303946;
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .powered-by::before,
+        .powered-by::after {
+            content: "";
+            width: 34px;
+            height: 2px;
+            border-radius: 999px;
+            background: #62c6dd;
+        }
+
         #bottom-logo {
-            max-width: 60%; /* Adjust the max-width as needed */
-            height: 50px;
+            max-width: 100%; /* Adjust the max-width as needed */
+            height: 64px;
             display: block;
-            margin: 20px auto;
+            margin: 0 auto;
         }
 
         /* Add styles for the privacy badge container */
@@ -128,7 +143,7 @@
             font-size: 16px;
             color: #333; /* Adjust the color as needed */
         }
-		
+
 		#privacy-link {
             color: #007BFF; /* Adjust the link color as needed */
             cursor: pointer;
@@ -150,35 +165,20 @@
     </style>
         <link rel="stylesheet" href="node_modules/reset.css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-	
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Results</title>
+
     <link rel="icon" href="image/favicon.ico" type="image/x-icon">
 </head>
-<body width = "device-width">
+<body>
 <nav>
-  <div class="nav-inner">
-    <div class="menu-left">
-      <i class="bx bx-menu menu-icon"></i>
-    </div>
-    <div class="logo-center">
-      <a href="https://busted-minds.github.io/search/">
-        <img class="slogo-name" src="image/busted-minds-search.jpg" alt="Busted Minds Search">
-      </a>
-    </div>
-    <div class="menu-right"><!-- blank to balance flex --></div>
-  </div>
+  <div class="logo">
+    <i class="bx bx-menu menu-icon"></i>
   </div>
       <div class="sidebar">
 	          <div class="logo">
           <i class="bx bx-menu menu-icon"></i>
-		<a href="https://busted-minds.github.io/" target="_blank">
-        <center>
-            <img src="https://busted-minds.github.io/images/Busted-Minds-Logo.png" style="width: 85%; height: 48px;">
-        </center>
+		<a class="sidebar-brand" href="https://busted-minds.github.io/" target="_blank">
+            <img src="https://bustedminds.us.kg/images/Busted-Minds-Logo.png" alt="Busted Minds">
     </a>
 		          </div>
         <div class="sidebar-content">
@@ -230,8 +230,32 @@
       </div>
     </nav>
     <section class="overlay"></section>
-    
+
 <div class="content">
+    <h1 class="visually-hidden">Busted Minds Search Results</h1>
+    <section class="bm-query-spotlight" id="bm-query-spotlight" hidden aria-label="Busted Minds spotlight">
+        <span class="bm-spotlight-aura" aria-hidden="true"></span>
+        <span class="bm-spotlight-grid" aria-hidden="true"></span>
+        <span class="bm-spotlight-beam bm-spotlight-beam-1" aria-hidden="true"></span>
+        <span class="bm-spotlight-beam bm-spotlight-beam-2" aria-hidden="true"></span>
+        <div class="bm-spotlight-mark">
+            <img src="https://bustedminds.us.kg/images/Busted-Minds-Logo.png" alt="Busted Minds">
+        </div>
+        <div class="bm-spotlight-copy">
+            <h2>Busted Minds</h2>
+            <p>Official links, community channels, and search results in one place.</p>
+            <div class="bm-spotlight-signals" aria-hidden="true">
+                <span>AI</span>
+                <span>Games</span>
+                <span>News</span>
+                <span>Community</span>
+            </div>
+        </div>
+        <div class="bm-spotlight-actions" aria-label="Busted Minds links">
+            <a class="bm-spotlight-button" href="https://busted-minds.github.io/">Visit Site</a>
+            <a class="bm-spotlight-button bm-spotlight-button-secondary" href="https://discord.gg/zGjyXFQbMh">Join</a>
+        </div>
+    </section>
     <script async src="https://cse.google.com/cse.js?cx=1290f1861e322472e">
 </script>
 <div class="custom-cse-wrapper">
@@ -239,21 +263,22 @@
 </div>
   <div class="gcse-searchresults"></div></div>
 	<div id="bottom-content">
-<a href="https://busted-minds.github.io/" target="_blank">
-        <img id="bottom-logo" src="https://busted-minds.github.io/images/Busted-Minds-Logo.png" alt="Busted Minds Logo"> <br><br>
+<a class="powered-by-lockup" href="https://busted-minds.github.io/" target="_blank" aria-label="Powered by Busted Minds">
+        <span class="powered-by">Powered by</span>
+        <img id="bottom-logo" src="https://bustedminds.us.kg/images/Busted-Minds-Logo.png" alt="Busted Minds Logo">
     </a>
     <a class="bottom-link" href="https://busted-minds.github.io/terms-and-conditions.html">Terms</a> <br><br>
     <a class="bottom-link" href="https://busted-minds.github.io/about.html">About</a> <br><br>
     <a class="bottom-link" href="https://busted-minds.github.io/contact.html">Business</a> <br>
 		<br><br>
-<div class="footersocial">	<a href="https://instagram.com/busted.minds.community"> <i class="bx bxl-instagram"></i></a>
-					<a href="https://discord.gg/zGjyXFQbMh"> <i class="bx bxl-discord"></i></a>
-					<a href="https://github.com/busted-minds"> <i class="bx bxl-github"> </i></a>
-					<a href="https://youtube.com/channel/UCG1XCLvmikpNHFzuQBNSIRA?sub_confirmation=1"> <i class="bx bxl-youtube"></i></a>
-					<a href="https://pin.it/3tKZ8nh"><i class="bx bxl-pinterest"> </i></a>
-					<a href="https://t.me/joinchat/adSjLVRvEeY3NDM1"> <i class="bx bxl-telegram"></i></a>
-	                                <a href="https://www.linkedin.com/company/bustedminds/"> <i class="bx bxl-linkedin"></i></a>
-					<a href="https://bustedmindscommunity.quora.com/"> <i class="bx bxl-quora"></i></a>
+<div class="footersocial">	<a href="https://instagram.com/busted.minds.community" aria-label="Busted Minds on Instagram"> <i class="bx bxl-instagram" aria-hidden="true"></i></a>
+					<a href="https://discord.gg/zGjyXFQbMh" aria-label="Join Busted Minds on Discord"> <i class="bx bxl-discord" aria-hidden="true"></i></a>
+					<a href="https://github.com/busted-minds" aria-label="Busted Minds on GitHub"> <i class="bx bxl-github" aria-hidden="true"> </i></a>
+					<a href="https://youtube.com/channel/UCG1XCLvmikpNHFzuQBNSIRA?sub_confirmation=1" aria-label="Busted Minds on YouTube"> <i class="bx bxl-youtube" aria-hidden="true"></i></a>
+					<a href="https://pin.it/3tKZ8nh" aria-label="Busted Minds on Pinterest"><i class="bx bxl-pinterest" aria-hidden="true"> </i></a>
+					<a href="https://t.me/joinchat/adSjLVRvEeY3NDM1" aria-label="Busted Minds on Telegram"> <i class="bx bxl-telegram" aria-hidden="true"></i></a>
+	                                <a href="https://www.linkedin.com/company/bustedminds/" aria-label="Busted Minds on LinkedIn"> <i class="bx bxl-linkedin" aria-hidden="true"></i></a>
+					<a href="https://bustedmindscommunity.quora.com/" aria-label="Busted Minds on Quora"> <i class="bx bxl-quora" aria-hidden="true"></i></a>
 					</div>	<br><br>
     <!-- Include the privacy badge SVG -->
 	<div id="privacy-badge-container">
@@ -262,6 +287,7 @@
     </div>
 	</div>
 
+    <script src="js/busted-minds-search.js"></script>
     <script>
       const navBar = document.querySelector("nav"),
         menuBtns = document.querySelectorAll(".menu-icon"),
@@ -276,6 +302,6 @@
       overlay.addEventListener("click", () => {
         navBar.classList.remove("open");
       });
-    </script>  
+    </script>
 </body>
 </html>

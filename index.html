@@ -1,23 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busted Minds Search | Private Web Search Portal</title>
+    <meta name="description" content="Busted Minds Search helps you search the web, images, news, AI, blogs, games, sports, and more from one fast search portal.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Busted Minds">
+    <link rel="canonical" href="https://search.bustedminds.us.kg/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Busted Minds Search">
+    <meta property="og:title" content="Busted Minds Search | Private Web Search Portal">
+    <meta property="og:description" content="Search the web, images, news, AI, blogs, games, sports, and more from one fast Busted Minds search portal.">
+    <meta property="og:url" content="https://search.bustedminds.us.kg/">
+    <meta property="og:image" content="https://search.bustedminds.us.kg/image/busted-minds-search.jpg">
+    <meta property="og:image:alt" content="Busted Minds Search logo">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Busted Minds Search | Private Web Search Portal">
+    <meta name="twitter:description" content="Search the web, images, news, AI, blogs, games, sports, and more from one fast Busted Minds search portal.">
+    <meta name="twitter:image" content="https://search.bustedminds.us.kg/image/busted-minds-search.jpg">
+    <link rel="preload" as="image" href="/image/busted-minds-search.jpg">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com" crossorigin>
+    <link rel="preconnect" href="https://busted-minds.github.io">
 <!-- Add this line to include Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 <link
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
-    />
+    >
     <!-- Your existing code remains unchanged here -->
 
     <style>
         /* Add some styling for the icons and text */
-        #icon-wrapper {
+        .icon-wrapper {
             display: flex;
             justify-content: center; /* Center the icons horizontally */
             margin-top: 10px;
         }
 
-        #icon-wrapper div {
+        .icon-wrapper div {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -25,17 +48,17 @@
             margin-bottom: 15px; /* Adjust the margin as needed */
         }
 
-        #icon-wrapper i {
+        .icon-wrapper i {
             font-size: 24px;
             margin-bottom: 5px; /* Adjust the margin as needed */
         }
-		
-		#icon-wrapper img {
+
+		.icon-wrapper img {
             width: 40px; /* Adjust the width of the image as needed */
             height: 40px; /* Adjust the height of the image as needed */
             margin-bottom: 5px; /* Adjust the margin as needed */
 		}
-		
+
 /* Add styles for the logo and links at the bottom */
         #bottom-content {
             text-align: center;
@@ -48,11 +71,53 @@
             color: #333; /* Adjust the color as needed */
         }
 
+        .powered-by-lockup {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            box-sizing: border-box;
+            max-width: min(280px, calc(100% - 32px));
+            padding: 14px 24px 16px;
+            margin: 0 auto 22px;
+            border: 1px solid #dbeaf0;
+            border-radius: 8px;
+            background: #fff;
+            box-shadow: 0 10px 26px rgba(26, 67, 86, 0.12);
+            text-decoration: none;
+            transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+        }
+
+        .powered-by-lockup:hover {
+            border-color: #86d2e4;
+            box-shadow: 0 14px 32px rgba(26, 67, 86, 0.16);
+            transform: translateY(-2px);
+        }
+
+        .powered-by {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #303946;
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .powered-by::before,
+        .powered-by::after {
+            content: "";
+            width: 34px;
+            height: 2px;
+            border-radius: 999px;
+            background: #62c6dd;
+        }
+
         #bottom-logo {
-            max-width: 60%; /* Adjust the max-width as needed */
-            height: 50px;
+            max-width: 100%; /* Adjust the max-width as needed */
+            height: 64px;
             display: block;
-            margin: 20px auto;
+            margin: 0 auto;
         }
 
         /* Add styles for the privacy badge container */
@@ -68,7 +133,7 @@
             max-width: 100%;
             height: auto;
             margin-right: 20px; /* Adjust the margin as needed */
-			
+
         }
 
         /* Add styles for the text next to the SVG */
@@ -76,7 +141,7 @@
             font-size: 16px;
             color: #333; /* Adjust the color as needed */
         }
-		
+
 		#privacy-link {
             color: #007BFF; /* Adjust the link color as needed */
             cursor: pointer;
@@ -106,21 +171,42 @@
         height: 70px;
       }
     }
-	    
+
     </style>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> <link rel="manifest" href="/site.webmanifest"> <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"> <meta name="msapplication-TileColor" content="#da532c"> <meta name="theme-color" content="#ffffff">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Busted Minds Search</title>
-<meta name='description' content='Busted Minds Search helps you turn information into action, making it faster and easier to go from searching to doing. '>.
     <link rel="icon" href="image/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="node_modules/reset.css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-	
-	
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Busted Minds Search",
+        "url": "https://search.bustedminds.us.kg/",
+        "description": "Busted Minds Search helps you search the web, images, news, AI, blogs, games, sports, and more from one fast search portal.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Busted Minds",
+          "url": "https://busted-minds.github.io/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://bustedminds.us.kg/images/Busted-Minds-Logo.png"
+          }
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://search.bustedminds.us.kg/search.html?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+
+
 </head>
-<body width = "device-width">
+<body>
 <nav>
       <div class="logo">
         <i class="bx bx-menu menu-icon"></i>
@@ -128,10 +214,8 @@
       <div class="sidebar">
 	          <div class="logo">
           <i class="bx bx-menu menu-icon"></i>
-		<a href="https://busted-minds.github.io/" target="_blank">
-        <center>
-            <img src="https://busted-minds.github.io/images/Busted-Minds-Logo.png" style="width: 85%; height: 48px;">
-        </center>
+		<a class="sidebar-brand" href="https://busted-minds.github.io/" target="_blank">
+            <img src="https://bustedminds.us.kg/images/Busted-Minds-Logo.png" alt="Busted Minds">
     </a>
 		          </div>
         <div class="sidebar-content">
@@ -189,9 +273,11 @@
     <main>
 	<br><br>
         <div id="logo-wrapper">
-            <img src="image/busted-minds-search.jpg" style="max-width: 80%; height: 80px; margin-left: auto; margin-right: auto;" alt="Busted Minds Search">
+            <img class="main-search-logo" src="image/busted-minds-search.jpg" alt="Busted Minds Search">
 	</div>
-		
+        <h1 class="visually-hidden">Busted Minds Search</h1>
+        <p class="visually-hidden">Search the web, images, news, AI, blogs, games, sports, and more from Busted Minds Search.</p>
+
         <div id="form-wrapper">
             <form action="search.html" method="GET" enctype="application/x-www-form-urlencoded" class="search-form">
                 <div id="search-wrapper">
@@ -206,46 +292,72 @@
                 </div>
             </form>
         </div>
-		
-		<div id="icon-wrapper">
+
+        <div class="bm-search-reveal" id="bm-search-reveal" hidden aria-hidden="true">
+            <span class="bm-reveal-particle bm-reveal-particle-1" aria-hidden="true"></span>
+            <span class="bm-reveal-particle bm-reveal-particle-2" aria-hidden="true"></span>
+            <span class="bm-reveal-particle bm-reveal-particle-3" aria-hidden="true"></span>
+            <span class="bm-reveal-particle bm-reveal-particle-4" aria-hidden="true"></span>
+            <span class="bm-reveal-particle bm-reveal-particle-5" aria-hidden="true"></span>
+            <span class="bm-reveal-particle bm-reveal-particle-6" aria-hidden="true"></span>
+            <span class="bm-reveal-beam bm-reveal-beam-1" aria-hidden="true"></span>
+            <span class="bm-reveal-beam bm-reveal-beam-2" aria-hidden="true"></span>
+            <div class="bm-reveal-card" role="status" aria-live="polite">
+                <span class="bm-reveal-orbit" aria-hidden="true"></span>
+                <span class="bm-reveal-orbit bm-reveal-orbit-alt" aria-hidden="true"></span>
+                <span class="bm-reveal-logo">
+                    <img src="https://bustedminds.us.kg/images/Busted-Minds-Logo.png" alt="">
+                </span>
+                <strong>Busted Minds</strong>
+                <span class="bm-reveal-message">Opening Busted Minds Search.</span>
+                <span class="bm-reveal-steps" aria-hidden="true">
+                    <span>Search</span>
+                    <span>Community</span>
+                    <span>Results</span>
+                </span>
+                <span class="bm-reveal-progress" aria-hidden="true"><span></span></span>
+            </div>
+        </div>
+
+		<div class="icon-wrapper">
         <div>
 	    <a href="https://busted-minds.github.io" target="_blank">
             <img src="image/bm.jpg" alt="Busted Minds"></a>
             <span>Home</span>
         </div>
         <div>
-		<a href="https://busted-minds.github.io/search/search.html?q=images#gsc.tab=1&gsc.q=images" target="_blank">
+		<a href="https://search.bustedminds.us.kg/search.html?q=images#gsc.tab=1&gsc.q=images" target="_blank">
             <img src="image/picture.png" alt="Images"></a>
             <span>Images</span>
         </div>
 		<div>
-				    <a href="https://busted-minds.github.io/search/search.html?q=mail" target="_blank">
+				    <a href="https://search.bustedminds.us.kg/search.html?q=mail" target="_blank">
             <img src="image/mail.png" alt="Mail"></a>
-            <span>Mail</span>    
+            <span>Mail</span>
         </div>
         <div>
 			    <a href="https://busted-minds.github.io/news.htm" target="_blank">
             <img src="image/news.png" alt="News"></a>
-            <span>News</span>		    
+            <span>News</span>
         </div>
         <!-- Add more icons and text as needed -->
     </div>
-	
-	<div id="icon-wrapper">
+
+	<div class="icon-wrapper">
 		<div>
 			<a href="https://busted-minds.github.io/ai.htm" target="_blank">
             <img src="image/ai.png" alt="AI"></a>
-            <span>AI</span>			
+            <span>AI</span>
         </div>
 		<div>
 			<a href="https://busted-minds.github.io/category.html" target="_blank">
             <img src="image/blog.png" alt="Blog"></a>
-            <span>Blog</span>			
+            <span>Blog</span>
         </div>
 		<div>
 			<a href="https://busted-minds.github.io/games" target="_blank">
             <img src="image/game.png" alt="Games"></a>
-            <span>Games</span>			
+            <span>Games</span>
         </div>
 		<div>
 			<a href="https://busted-minds.github.io/livescore.htm" target="_blank">
@@ -282,44 +394,45 @@
             </div>
         </div>
         <form class="weather-search" id="weather-form" hidden>
-            <input id="weather-city" type="search" placeholder="Search city" autocomplete="off" aria-label="Search city weather" aria-controls="weather-suggestions" aria-autocomplete="list">
+            <input id="weather-city" type="search" placeholder="Search city" autocomplete="off" aria-label="Search city weather" aria-controls="weather-suggestions">
             <button class="weather-search-submit" type="submit" aria-label="Search weather">
                 Go
             </button>
         </form>
-        <div class="weather-suggestions" id="weather-suggestions" role="listbox" hidden></div>
+        <div class="weather-suggestions" id="weather-suggestions" hidden></div>
         <span class="weather-status" id="weather-status" role="status" aria-live="polite">Loading weather...</span>
     </section>
-	
-    </main>    	
+
+    </main>
 	<img class="test" src="image/img1.jpeg" alt="Busted Minds Search | Quality Search Results | Trusted World Wide">
-		
+
 		<div id="bottom-content">
-<a href="https://busted-minds.github.io/" target="_blank">
-        <img id="bottom-logo" src="https://busted-minds.github.io/images/Busted-Minds-Logo.png" alt="Busted Minds Logo"> <br><br>
+<a class="powered-by-lockup" href="https://busted-minds.github.io/" target="_blank" aria-label="Powered by Busted Minds">
+        <span class="powered-by">Powered by</span>
+        <img id="bottom-logo" src="https://bustedminds.us.kg/images/Busted-Minds-Logo.png" alt="Busted Minds Logo">
     </a>
     <a class="bottom-link" href="https://busted-minds.github.io/terms-and-conditions.html">Terms</a> <br><br>
     <a class="bottom-link" href="https://busted-minds.github.io/about.html">About</a> <br><br>
     <a class="bottom-link" href="https://busted-minds.github.io/contact.html">Business</a> <br>
 			<br><br>
-<div class="footersocial">	<a href="https://instagram.com/busted.minds.community"> <i class="bx bxl-instagram"></i></a>
-					<a href="https://discord.gg/zGjyXFQbMh"> <i class="bx bxl-discord"></i></a>
-					<a href="https://github.com/busted-minds"> <i class="bx bxl-github"> </i></a>
-					<a href="https://youtube.com/channel/UCG1XCLvmikpNHFzuQBNSIRA?sub_confirmation=1"> <i class="bx bxl-youtube"></i></a>
-					<a href="https://pin.it/3tKZ8nh"><i class="bx bxl-pinterest"> </i></a>
-					<a href="https://t.me/joinchat/adSjLVRvEeY3NDM1"> <i class="bx bxl-telegram"></i></a>
-	                                <a href="https://www.linkedin.com/company/bustedminds/"> <i class="bx bxl-linkedin"></i></a>
-					<a href="https://bustedmindscommunity.quora.com/"> <i class="bx bxl-quora"></i></a>
+<div class="footersocial">	<a href="https://instagram.com/busted.minds.community" aria-label="Busted Minds on Instagram"> <i class="bx bxl-instagram" aria-hidden="true"></i></a>
+					<a href="https://discord.gg/zGjyXFQbMh" aria-label="Join Busted Minds on Discord"> <i class="bx bxl-discord" aria-hidden="true"></i></a>
+					<a href="https://github.com/busted-minds" aria-label="Busted Minds on GitHub"> <i class="bx bxl-github" aria-hidden="true"> </i></a>
+					<a href="https://youtube.com/channel/UCG1XCLvmikpNHFzuQBNSIRA?sub_confirmation=1" aria-label="Busted Minds on YouTube"> <i class="bx bxl-youtube" aria-hidden="true"></i></a>
+					<a href="https://pin.it/3tKZ8nh" aria-label="Busted Minds on Pinterest"><i class="bx bxl-pinterest" aria-hidden="true"> </i></a>
+					<a href="https://t.me/joinchat/adSjLVRvEeY3NDM1" aria-label="Busted Minds on Telegram"> <i class="bx bxl-telegram" aria-hidden="true"></i></a>
+	                                <a href="https://www.linkedin.com/company/bustedminds/" aria-label="Busted Minds on LinkedIn"> <i class="bx bxl-linkedin" aria-hidden="true"></i></a>
+					<a href="https://bustedmindscommunity.quora.com/" aria-label="Busted Minds on Quora"> <i class="bx bxl-quora" aria-hidden="true"></i></a>
 					</div>	<br><br>
     <!-- Include the privacy badge SVG -->
 	<div id="privacy-badge-container">
         <img id="privacy-badge" src="https://www.startpage.com/sp/cdn/images/home/default/privacy-please-badge-new.svg" alt="Privacy Badge">
          <span id="protect-text">Learn more about how <br>we protect your privacy.<br>Visit our <a id="privacy-link" href="https://busted-minds.github.io/privacy-policy.html">privacy policy</a></span>
     </div>
-	</div>		
-		</div>
-		  
+	</div>
+
   <script src="js/weather.js"></script>
+  <script src="js/busted-minds-search.js"></script>
   <script>
       const navBar = document.querySelector("nav"),
         menuBtns = document.querySelectorAll(".menu-icon"),
@@ -334,6 +447,6 @@
       overlay.addEventListener("click", () => {
         navBar.classList.remove("open");
       });
-    </script>   
+    </script>
 </body>
 </html>

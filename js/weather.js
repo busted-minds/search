@@ -190,7 +190,6 @@
             const button = document.createElement("button");
             button.type = "button";
             button.className = "weather-suggestion";
-            button.setAttribute("role", "option");
 
             const place = document.createElement("span");
             place.className = "weather-suggestion-place";
