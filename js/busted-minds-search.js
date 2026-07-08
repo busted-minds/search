@@ -79,26 +79,37 @@
     }
 
     function setupResultsSpotlight() {
+        const arcade = document.getElementById("bm-results-arcade");
         const spotlight = document.getElementById("bm-query-spotlight");
 
-        if (!spotlight) {
+        if (!arcade && !spotlight) {
             return;
+        }
+
+        function setElementVisible(element, shouldShow) {
+            if (!element) {
+                return;
+            }
+
+            if (!shouldShow) {
+                element.classList.remove("is-visible");
+                element.hidden = true;
+                return;
+            }
+
+            element.hidden = false;
+
+            window.requestAnimationFrame(function () {
+                element.classList.add("is-visible");
+            });
         }
 
         function syncSpotlight() {
             const shouldShow = isBustedMindsQuery(getCurrentSearchQuery());
+            document.body.classList.toggle("bm-results-mode", shouldShow);
 
-            if (!shouldShow) {
-                spotlight.classList.remove("is-visible");
-                spotlight.hidden = true;
-                return;
-            }
-
-            spotlight.hidden = false;
-
-            window.requestAnimationFrame(function () {
-                spotlight.classList.add("is-visible");
-            });
+            setElementVisible(arcade, shouldShow);
+            setElementVisible(spotlight, shouldShow && !arcade);
         }
 
         syncSpotlight();

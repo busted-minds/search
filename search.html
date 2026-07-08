@@ -169,7 +169,7 @@
 
     <link rel="icon" href="image/favicon.ico" type="image/x-icon">
 </head>
-<body>
+<body class="results-page">
 <nav>
   <div class="logo">
     <i class="bx bx-menu menu-icon"></i>
@@ -177,8 +177,8 @@
       <div class="sidebar">
 	          <div class="logo">
           <i class="bx bx-menu menu-icon"></i>
-		<a class="sidebar-brand" href="https://busted-minds.github.io/" target="_blank">
-            <img src="https://bustedminds.us.kg/images/Busted-Minds-Logo.png" alt="Busted Minds">
+		<a class="sidebar-brand" href="index.html">
+            <img src="image/busted-minds-search.png" alt="Busted Minds Search">
     </a>
 		          </div>
         <div class="sidebar-content">
@@ -231,37 +231,68 @@
     </nav>
     <section class="overlay"></section>
 
-<div class="content">
+<div class="content results-content">
     <h1 class="visually-hidden">Busted Minds Search Results</h1>
-    <section class="bm-query-spotlight" id="bm-query-spotlight" hidden aria-label="Busted Minds spotlight">
-        <span class="bm-spotlight-aura" aria-hidden="true"></span>
-        <span class="bm-spotlight-grid" aria-hidden="true"></span>
-        <span class="bm-spotlight-beam bm-spotlight-beam-1" aria-hidden="true"></span>
-        <span class="bm-spotlight-beam bm-spotlight-beam-2" aria-hidden="true"></span>
-        <div class="bm-spotlight-mark">
-            <img src="https://bustedminds.us.kg/images/Busted-Minds-Logo.png" alt="Busted Minds">
+    <div class="results-search-header">
+        <a class="results-search-logo" href="index.html" aria-label="Busted Minds Search home">
+            <img src="image/busted-minds-search.png" alt="Busted Minds Search">
+        </a>
+        <div class="custom-cse-wrapper">
+            <div class="gcse-searchbox"></div>
         </div>
-        <div class="bm-spotlight-copy">
-            <h2>Busted Minds</h2>
-            <p>Official links, community channels, and search results in one place.</p>
-            <div class="bm-spotlight-signals" aria-hidden="true">
-                <span>AI</span>
-                <span>Games</span>
-                <span>News</span>
-                <span>Community</span>
+    </div>
+    <div class="results-scroll-area">
+    <section class="bm-results-arcade" id="bm-results-arcade" hidden aria-label="Busted Minds themed results">
+        <span class="bm-arcade-grid" aria-hidden="true"></span>
+        <span class="bm-arcade-scanline" aria-hidden="true"></span>
+        <div class="bm-pixel-shower" aria-hidden="true">
+            <span style="--x:4%; --delay:-0.2s; --speed:4.6s;"></span>
+            <span style="--x:11%; --delay:-2.4s; --speed:5.4s;"></span>
+            <span style="--x:18%; --delay:-1.2s; --speed:4.9s;"></span>
+            <span style="--x:27%; --delay:-3.2s; --speed:5.8s;"></span>
+            <span style="--x:35%; --delay:-0.8s; --speed:4.4s;"></span>
+            <span style="--x:43%; --delay:-2.9s; --speed:5.2s;"></span>
+            <span style="--x:52%; --delay:-1.6s; --speed:4.8s;"></span>
+            <span style="--x:61%; --delay:-3.8s; --speed:5.7s;"></span>
+            <span style="--x:70%; --delay:-0.5s; --speed:4.5s;"></span>
+            <span style="--x:78%; --delay:-2.1s; --speed:5.1s;"></span>
+            <span style="--x:86%; --delay:-1.1s; --speed:4.7s;"></span>
+            <span style="--x:94%; --delay:-3.4s; --speed:5.6s;"></span>
+        </div>
+        <div class="bm-arcade-stage">
+            <div class="bm-arcade-brand">
+                <img src="https://bustedminds.us.kg/images/Busted-Minds-Logo.png" alt="Busted Minds">
+            </div>
+            <div class="bm-arcade-copy">
+                <p>Official links, creator channels, community spaces, and web results are queued below.</p>
+                <div class="bm-arcade-actions" aria-label="Busted Minds links">
+                    <a href="https://busted-minds.github.io/">Visit Site</a>
+                    <a href="https://discord.gg/zGjyXFQbMh">Join Community</a>
+                    <a href="https://busted-minds.github.io/ai.htm">AI Tools</a>
+                </div>
+            </div>
+            <div class="bm-mini-game" aria-hidden="true">
+                <span class="bm-mini-orb"></span>
+                <span class="bm-mini-platform bm-mini-platform-1"></span>
+                <span class="bm-mini-platform bm-mini-platform-2"></span>
+                <span class="bm-mini-platform bm-mini-platform-3"></span>
+                <span class="bm-mini-coin bm-mini-coin-1"></span>
+                <span class="bm-mini-coin bm-mini-coin-2"></span>
+                <span class="bm-mini-coin bm-mini-coin-3"></span>
             </div>
         </div>
-        <div class="bm-spotlight-actions" aria-label="Busted Minds links">
-            <a class="bm-spotlight-button" href="https://busted-minds.github.io/">Visit Site</a>
-            <a class="bm-spotlight-button bm-spotlight-button-secondary" href="https://discord.gg/zGjyXFQbMh">Join</a>
+        <div class="bm-arcade-status" aria-hidden="true">
+            <span>AI</span>
+            <span>Games</span>
+            <span>News</span>
+            <span>Community</span>
+            <span>Search</span>
         </div>
     </section>
-    <script async src="https://cse.google.com/cse.js?cx=1290f1861e322472e">
-</script>
-<div class="custom-cse-wrapper">
-  <div class="gcse-searchbox"></div>
+    <div class="gcse-searchresults"></div>
+    </div>
+    <script async src="https://cse.google.com/cse.js?cx=1290f1861e322472e"></script>
 </div>
-  <div class="gcse-searchresults"></div></div>
 	<div id="bottom-content">
 <a class="powered-by-lockup" href="https://busted-minds.github.io/" target="_blank" aria-label="Powered by Busted Minds">
         <span class="powered-by">Powered by</span>
