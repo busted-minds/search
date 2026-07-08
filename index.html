@@ -179,35 +179,6 @@
               </a>
             </li>
           </ul>
-		  <br>
-          <div class="bottom-cotent">
-            <div><script>
-        (function(d, s, id) {
-            if (d.getElementById(id)) {
-                if (window.__TOMORROW__) {
-                    window.__TOMORROW__.renderWidget();
-                }
-                return;
-            }
-            const fjs = d.getElementsByTagName(s)[0];
-            const js = d.createElement(s);
-            js.id = id;
-            js.src = "https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";
-
-            fjs.parentNode.insertBefore(js, fjs);
-        })(document, 'script', 'tomorrow-sdk');
-        </script>
-
-        <div class="tomorrow"
-           data-location-id=""
-           data-language="EN"
-           data-unit-system="METRIC"
-           data-skin="light"
-           data-widget-type="upcoming"
-           style="padding-bottom:22px;position:relative;"
-        >
-        </div></div>
-          </div>
         </div>
       </div>
     </nav>
@@ -285,6 +256,42 @@
         </div>
         <!-- Add more icons and text as needed -->
     </div>
+
+    <section class="weather-panel is-loading" id="weather-panel" aria-label="Weather" data-weather="cloud">
+        <div class="weather-panel-main">
+            <div class="weather-visual" aria-hidden="true">
+                <span class="weather-sun"></span>
+                <span class="weather-cloud weather-cloud-main"></span>
+                <span class="weather-cloud weather-cloud-small"></span>
+                <span class="weather-rain"></span>
+                <span class="weather-snow"></span>
+                <span class="weather-flash"></span>
+            </div>
+            <div class="weather-copy">
+                <strong class="weather-temp" id="weather-temp">--</strong>
+                <span class="weather-text">
+                    <span class="weather-location" id="weather-location">Tokyo, Japan</span>
+                    <span class="weather-condition" id="weather-condition">Loading...</span>
+                </span>
+            </div>
+            <div class="weather-actions">
+                <button class="weather-icon-button" id="weather-show-search" type="button" aria-expanded="false" aria-controls="weather-form" aria-label="Change weather city">
+                    <i class="bx bx-search" aria-hidden="true"></i>
+                </button>
+                <button class="weather-icon-button" id="weather-use-location" type="button" aria-label="Use my location">
+                    <i class="bx bx-current-location" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        <form class="weather-search" id="weather-form" hidden>
+            <input id="weather-city" type="search" placeholder="Search city" autocomplete="off" aria-label="Search city weather" aria-controls="weather-suggestions" aria-autocomplete="list">
+            <button class="weather-search-submit" type="submit" aria-label="Search weather">
+                Go
+            </button>
+        </form>
+        <div class="weather-suggestions" id="weather-suggestions" role="listbox" hidden></div>
+        <span class="weather-status" id="weather-status" role="status" aria-live="polite">Loading weather...</span>
+    </section>
 	
     </main>    	
 	<img class="test" src="image/img1.jpeg" alt="Busted Minds Search | Quality Search Results | Trusted World Wide">
@@ -314,6 +321,7 @@
 	</div>		
 		</div>
 		  
+  <script src="js/weather.js"></script>
   <script>
       const navBar = document.querySelector("nav"),
         menuBtns = document.querySelectorAll(".menu-icon"),
