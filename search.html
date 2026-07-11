@@ -264,21 +264,37 @@
                 <img src="https://bustedminds.us.kg/images/Busted-Minds-Logo.png" alt="Busted Minds">
             </div>
             <div class="bm-arcade-copy">
-                <p>Official links, creator channels, community spaces, and web results are queued below.</p>
+                <span class="bm-arcade-kicker">Easter egg unlocked</span>
+                <h2>Welcome to the weird side of search.</h2>
+                <p>You searched the magic words. Catch all seven mind sparks to activate maximum brain chaos—or keep scrolling for your results.</p>
                 <div class="bm-arcade-actions" aria-label="Busted Minds links">
                     <a href="https://busted-minds.github.io/">Visit Site</a>
                     <a href="https://discord.gg/zGjyXFQbMh">Join Community</a>
                     <a href="https://busted-minds.github.io/ai.htm">AI Tools</a>
                 </div>
             </div>
-            <div class="bm-mini-game" aria-hidden="true">
-                <span class="bm-mini-orb"></span>
-                <span class="bm-mini-platform bm-mini-platform-1"></span>
-                <span class="bm-mini-platform bm-mini-platform-2"></span>
-                <span class="bm-mini-platform bm-mini-platform-3"></span>
-                <span class="bm-mini-coin bm-mini-coin-1"></span>
-                <span class="bm-mini-coin bm-mini-coin-2"></span>
-                <span class="bm-mini-coin bm-mini-coin-3"></span>
+            <div class="bm-mind-game" id="bm-mind-game" role="region" aria-labelledby="bm-game-title">
+                <div class="bm-game-head">
+                    <span id="bm-game-title">Mind Rush <small>Best <strong id="bm-game-best">0000</strong></small></span>
+                    <span class="bm-game-score">Score <strong id="bm-game-score">0000</strong></span>
+                </div>
+                <div class="bm-game-field" id="bm-game-field">
+                    <div class="bm-game-intro" id="bm-game-intro">
+                        <span class="bm-game-orb" aria-hidden="true"></span>
+                        <p>Catch 7 sparks. Build a combo.</p>
+                        <button type="button" id="bm-game-start">Start the chaos</button>
+                    </div>
+                    <button class="bm-game-spark" id="bm-game-spark" type="button" aria-label="Catch mind spark" hidden>
+                        <span aria-hidden="true"></span>
+                    </button>
+                    <div class="bm-game-bursts" id="bm-game-bursts" aria-hidden="true"></div>
+                    <div class="bm-game-confetti" id="bm-game-confetti" aria-hidden="true"></div>
+                </div>
+                <div class="bm-game-footer">
+                    <span class="bm-game-message" id="bm-game-message" aria-live="polite">Ready when you are.</span>
+                    <span class="bm-game-count"><strong id="bm-game-count">0</strong>/7 sparks</span>
+                </div>
+                <span class="bm-game-progress" aria-hidden="true"><span id="bm-game-progress"></span></span>
             </div>
         </div>
         <div class="bm-arcade-status" aria-hidden="true">
